@@ -10,7 +10,7 @@ const jwtpass= require("./config/passport")
 const  dotenv = require("dotenv")
 dotenv.config();
 
-const PORT = 4000;
+const PORT = process.env.PORT || 8080
 const app = express(); 
 app.use(cors());
 
